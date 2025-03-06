@@ -1,26 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Mostrar solo la sección de inicio al cargar la página
-    mostrarSeccion("inicio");
+    let mainContent = document.querySelector(".container-fluid");
+    let sections = document.querySelectorAll(".seccion");
 
-    // Agregar eventos a los botones del menú
-    document.querySelectorAll(".nav-link").forEach(function (enlace) {
-        enlace.addEventListener("click", function (event) {
+    // Función para mostrar la sección correcta
+    function showSection(targetId) {
+        sections.forEach(section => {
+            section.style.display = "none"; // Oculta todas las secciones
+        });
+
+        let targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.style.display = "block"; // Muestra la sección seleccionada
+        }
+
+        // Si vamos a "contacto", ocultamos el contenido principal
+        if (targetId === "contacto") {
+            mainContent.style.display = "none";
+        } else {
+            mainContent.style.display = "block";
+        }
+    }
+
+    // Eventos para cada enlace del menú
+    document.querySelectorAll("nav a").forEach(link => {
+        link.addEventListener("click", function (event) {
             event.preventDefault();
-            const idSeccion = this.getAttribute("href").substring(1); // Obtiene el ID de la sección
-            mostrarSeccion(idSeccion);
+            let targetId = this.getAttribute("href").substring(1); // Obtener ID sin #
+            showSection(targetId);
         });
     });
 
-    function mostrarSeccion(id) {
-        // Ocultar todas las secciones
-        document.querySelectorAll(".container-fluid > div").forEach(function (seccion) {
-            seccion.style.display = "none";
-        });
-
-        // Mostrar la sección seleccionada
-        const seccionMostrada = document.getElementById(id);
-        if (seccionMostrada) {
-            seccionMostrada.style.display = "block";
-        }
-    }
+    // Manejo de recarga de página
+    let initialSection = location.hash.substring(1) || "inicio";
+    showSection(initialSection);
 });
+
