@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             targetSection.style.display = "block"; // Muestra la sección seleccionada
         }
 
-        // Si vamos a "contacto", ocultamos el contenido principal
+        // Ocultar el contenido principal solo si vamos a "contacto"
         if (targetId === "contacto") {
             mainContent.style.display = "none";
         } else {
@@ -27,11 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             let targetId = this.getAttribute("href").substring(1); // Obtener ID sin #
             showSection(targetId);
+
+            // Actualizar la URL sin recargar la página
+            history.pushState(null, "", `#${targetId}`);
         });
     });
 
     // Manejo de recarga de página
     let initialSection = location.hash.substring(1) || "inicio";
     showSection(initialSection);
-});
 
+    // Manejar cambios en la URL cuando el usuario usa el botón "atrás" del navegador
+    window.addEventListener("popstate", function () {
+        let sectionFromHash = location.hash.substring(1) || "inicio";
+        showSection(sectionFromHash);
+    });
+});
