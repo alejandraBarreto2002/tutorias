@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     var eventList = document.getElementById('event-list'); // Lista de reservas
@@ -100,3 +101,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
