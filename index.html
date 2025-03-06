@@ -90,6 +90,31 @@
             </div>
             
         </div>
+        <div id="contacto" class="container mt-5" style="display: none;">
+            <h2>Contacto</h2>
+            <p>Formulario de contacto para dudas o consultas.</p>
+        
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        
+            <h3 class="mt-4">Información de contacto</h3>
+            <p>📞 Teléfono: +123 456 789</p>
+            <p>📧 Email: contacto@tutorias.com</p>
+            <p>📍 Dirección: Calle 123, Ciudad, País</p>
+        </div>
     </div>
 
     <!-- Scripts -->
@@ -100,6 +125,7 @@
     <!-- FullCalendar JS -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
     <script src="js/agenda.js"></script>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
