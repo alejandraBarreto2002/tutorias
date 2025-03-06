@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -271,7 +272,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+webkit-appearance: button;
 }
 
 button:not(:disabled),
@@ -330,7 +331,7 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+webkit-appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
