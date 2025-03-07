@@ -222,6 +222,59 @@
     <button id="agregar-testimonio" class="btn btn-primary mt-3">Añadir Testimonio</button>
 </div>
 
+<!-- Sección Iniciar Sesión / Registro -->
+<div id="login" class="container mt-5 seccion" style="display: none;">
+    <h2>Iniciar Sesión / Registrarse</h2>
+
+    <!-- Formulario de Registro -->
+    <div id="registro-form">
+        <h3>Crear Cuenta</h3>
+        <input type="email" id="register-email" placeholder="Correo electrónico" required>
+        <input type="password" id="register-password" placeholder="Contraseña" required>
+        <select id="register-role">
+            <option value="estudiante">Estudiante</option>
+            <option value="tutor">Tutor</option>
+        </select>
+        <button id="register-btn" class="btn btn-primary">Registrarse</button>
+    </div>
+
+    <hr>
+
+    <!-- Formulario de Inicio de Sesión -->
+    <div id="login-form">
+        <h3>Iniciar Sesión</h3>
+        <input type="email" id="login-email" placeholder="Correo electrónico" required>
+        <input type="password" id="login-password" placeholder="Contraseña" required>
+        <button id="login-btn" class="btn btn-success">Ingresar</button>
+    </div>
+
+    
+    <div id="user-panel" style="display: none;">
+        <h3>Bienvenido, <span id="user-email"></span></h3>
+        <p id="user-role"></p>
+        
+       
+        <div id="estudiante-section" style="display: none;">
+            <h4>Historial de Clases y Pagos:</h4>
+            <ul id="historial">
+                <li>Clase de Matemáticas - Pagada</li>
+                <li>Clase de Física - Pendiente de pago</li>
+            </ul>
+        </div>
+
+        
+        <div id="tutor-section" style="display: none;">
+            <h4>Gestión de Tutorías</h4>
+            <button id="agregar-clase" class="btn btn-primary">Agregar Clase</button>
+            <ul id="clases-tutor">
+                <li>No tienes clases registradas.</li>
+            </ul>
+        </div>
+
+        <button id="logout-btn" class="btn btn-danger">Cerrar Sesión</button>
+    </div>
+</div>
+
 
             <!-- Sección Contacto -->
             <div id="contacto" class="container mt-5 seccion"style="display: none;">
