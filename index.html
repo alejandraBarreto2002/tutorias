@@ -10,11 +10,11 @@
 
     <title>Tutorías Académicas</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- Custom styles for this template -->
     <link href="css/styles_1.css" rel="stylesheet">
     <link href="css/styles_2.css" rel="stylesheet">
 
@@ -31,57 +31,22 @@
                 <div class="sidebar-brand-text mx-3">Tutorías</div>
             </a>
             <hr class="sidebar-divider my-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#inicio">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span>Inicio</span></a>
-            </li>
-            <hr class="sidebar-divider my-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#servicios">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span>Servicios</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#agenda">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Agenda</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#testimonios">
-                    <i class="fas fa-users"></i>
-                    <span>Testimonios</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#blog">
-                    <i class="fas fa-book-open"></i>
-                    <span>Blog</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contacto">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contacto</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#login">
-                    <i class="fas fa-user"></i>
-                    <span>Iniciar Sesión</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#conclusiones">
-                    <i class="fas fa-user"></i>
-                    <span>Conclusiones</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#equipo">
-                    <i class="fas fa-user"></i>
-                    <span>Equipo</span></a>
-            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#inicio"><i class="fas fa-chalkboard-teacher"></i> <span>Inicio</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios"><i class="fas fa-book"></i> <span>Servicios</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#agenda"><i class="fas fa-calendar-alt"></i> <span>Agenda</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonios"><i class="fas fa-users"></i> <span>Testimonios</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog"><i class="fas fa-book-open"></i> <span>Blog</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> <span>Contacto</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq"><i class="fas fa-question-circle"></i> <span>FAQ</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#conclusiones"><i class="fas fa-check-circle"></i> <span>Conclusiones</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo"><i class="fas fa-users"></i> <span>Equipo</span></a></li>
         </ul>
         <!-- End of Sidebar -->
 
         <!-- Contenido principal -->
         <div class="container-fluid">
+            <!-- Sección Inicio -->
             <div id="inicio" class="container mt-5 seccion">
                 <h2>Bienvenidos a Tutorías Académicas</h2>
                 <p>Aprender nunca ha sido tan accesible y personalizado. En <strong>Tutorías Académicas</strong>, ofrecemos un espacio diseñado para fortalecer tus conocimientos, aclarar dudas y potenciar tu rendimiento académico de manera efectiva. Nuestro objetivo es proporcionarte la orientación y el apoyo que necesitas para alcanzar tus metas educativas, sin importar tu nivel o área de estudio.</p>
@@ -106,64 +71,74 @@
                 <p>Explora nuestro sitio, encuentra el tutor ideal para ti y da el siguiente paso hacia una educación más efectiva y personalizada. ¡Estamos aquí para ayudarte a alcanzar todo tu potencial!</p>
                 
                 <h3><strong>Empieza hoy mismo tu camino hacia el éxito académico con Tutorías Académicas.</strong></h3>
-            </div>                        
+            </div>
+
+            <!-- Sección Agenda -->
             <div id="agenda" class="container mt-4 seccion">
                 <div class="row">
-                    <!-- Columna del calendario -->
                     <div class="col-md-8">
                         <h2>Agenda/Calendario</h2>
                         <div id="calendar"></div>
                     </div>
-            
-                    <!-- Columna de la lista de reservas -->
                     <div class="col-md-4">
                         <h3>Reservas</h3>
-                        <ul id="event-list" class="list-group">
-                            <!-- Aquí se agregarán las reservas dinámicamente -->
-                        </ul>
+                        <ul id="event-list" class="list-group"></ul>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div id="contacto" class="container mt-5 seccion" style="display: none;">
-            <h2>Contacto</h2>
-            <p>Formulario de contacto para dudas o consultas.</p>
-        
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        
-            <h3 class="mt-4">Información de contacto</h3>
-            <p>📞 Teléfono: +123 456 789</p>
-            <p>📧 Email: contacto@tutorias.com</p>
-            <p>📍 Dirección: Calle 123, Ciudad, País</p>
-        </div>
-        
-    </div>
+
+            <!-- Sección Contacto -->
+            <div id="contacto" class="container mt-5 seccion" style="display: none;">
+                <h2>Contacto</h2>
+                <p>Formulario de contacto para dudas o consultas.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Sección Conclusiones -->
+            <div id="conclusiones" class="container mt-5 seccion" style="display: none;">
+                <h2>Conclusiones</h2>
+                <p>Las tutorías académicas juegan un papel fundamental en el desarrollo educativo...</p>
+                <h3>¿Por qué elegir Tutorías Académicas?</h3>
+                <ul>
+                    <li>✅ Atención personalizada para potenciar el aprendizaje.</li>
+                    <li>✅ Flexibilidad en horarios y modalidades.</li>
+                    <li>✅ Apoyo en una amplia variedad de materias.</li>
+                    <li>✅ Desarrollo de autonomía y confianza en los estudiantes.</li>
+                </ul>
+                <h3>¡Empieza hoy mismo!</h3>
+                <p>El conocimiento es la clave del éxito. Aprovecha las tutorías académicas...</p>
+                <a href="#agenda" class="btn btn-primary">Agendar una Tutoría</a>
+            </div>
+        </div> <!-- Fin de container-fluid -->
+    </div> <!-- Fin de wrapper -->
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- FullCalendar CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.css" rel="stylesheet">
-    <!-- FullCalendar JS -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
     <script src="js/agenda.js"></script>
     <script src="js/contacto.js"></script>
     <script src="js/navegacion.js"></script>
+       <!-- FullCalendar CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.css" rel="stylesheet">
+       <!-- FullCalendar JS -->
+       <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
+       <script src="js/agenda.js"></script>
+    
 </body>
 
 </html>
