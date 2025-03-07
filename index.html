@@ -47,7 +47,7 @@
         <!-- Contenido principal -->
         <div class="container-fluid">
             <!-- Sección Inicio -->
-            <div id="inicio" class="container mt-5 seccion">
+            <div id="inicio" class="container mt-5 seccion"style="display: none;">
                 <h2>Bienvenidos a Tutorías Académicas</h2>
                 <p>Aprender nunca ha sido tan accesible y personalizado. En <strong>Tutorías Académicas</strong>, ofrecemos un espacio diseñado para fortalecer tus conocimientos, aclarar dudas y potenciar tu rendimiento académico de manera efectiva. Nuestro objetivo es proporcionarte la orientación y el apoyo que necesitas para alcanzar tus metas educativas, sin importar tu nivel o área de estudio.</p>
                 <h3>¿Qué son las tutorías académicas?</h3>
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Sección Agenda -->
-            <div id="agenda" class="container mt-4 seccion">
+            <div id="agenda" class="container mt-4 seccion"style="display: none;">
                 <div class="row">
                     <div class="col-md-8">
                         <h2>Agenda/Calendario</h2>
@@ -88,7 +88,7 @@
             </div>
 
             <!-- Sección Contacto -->
-            <div id="contacto" class="container mt-5 seccion" style="display: none;">
+            <div id="contacto" class="container mt-5 seccion"style="display: none;">
                 <h2>Contacto</h2>
                 <p>Formulario de contacto para dudas o consultas.</p>
                 <form>
@@ -125,20 +125,19 @@
             </div>
         </div> <!-- Fin de container-fluid -->
     </div> <!-- Fin de wrapper -->
-
     <!-- Scripts -->
+         <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.css" rel="stylesheet">
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
     <script src="js/agenda.js"></script>
     <script src="js/contacto.js"></script>
     <script src="js/navegacion.js"></script>
-       <!-- FullCalendar CSS -->
-       <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.css" rel="stylesheet">
-       <!-- FullCalendar JS -->
-       <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
-       <script src="js/agenda.js"></script>
-    
+    <!-- FontAwesome (icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </body>
 
 </html>

@@ -14,12 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
             targetSection.style.display = "block"; // Muestra solo la sección seleccionada
         }
 
-        // Si volvemos a una sección diferente de "contacto", restauramos el contenido principal
         if (targetId === "contacto") {
-            mainContent.style.display = "none"; 
+            contactSection.style.display = "block"; 
         } else {
-            mainContent.style.display = "block"; 
-            contactSection.style.display = "none"; // Ocultar contacto si salimos de él
+            contactSection.style.display = "none";
         }
     }
 
@@ -30,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Agregar eventos a todos los enlaces del menú
-    document.querySelectorAll("nav a").forEach(link => {
+    document.querySelectorAll(".sidebar a").forEach(link => {
         link.addEventListener("click", function (event) {
             event.preventDefault();
-            let targetId = this.getAttribute("href").substring(1); // Obtener ID sin #
+            let targetId = this.getAttribute("href").substring(1); 
             showSection(targetId);
         });
     });
