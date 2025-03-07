@@ -223,44 +223,68 @@
     </div>
     <button id="agregar-testimonio" class="btn btn-primary mt-3">Añadir Testimonio</button>
 </div>
-
-<div id="login" class="container mt-5 seccion" style="display: none;">
+<!-- Sección Iniciar Sesión / Registro -->
+<div id="login" class="container mt-5 seccion">
     <h2>Iniciar Sesión / Registrarse</h2>
 
-   
+    <!-- Formulario de Registro -->
+    <div id="registro-form" style="display: none;">
+        <h3>Crear Cuenta</h3>
+        <input type="email" id="register-email" placeholder="Correo electrónico" required>
+        <input type="password" id="register-password" placeholder="Contraseña" required>
+        <select id="register-role">
+            <option value="estudiante">Estudiante</option>
+            <option value="tutor">Tutor</option>
+        </select>
+        <button id="register-btn" class="btn btn-primary">Registrarse</button>
+
+        <!-- Botón para cambiar a Iniciar Sesión -->
+        <p class="mt-3">¿Ya tienes cuenta? <a href="#" id="mostrar-login">Inicia sesión aquí</a></p>
+    </div>
+
+    <hr>
+
+    <!-- Formulario de Inicio de Sesión -->
     <div id="login-form">
         <h3>Iniciar Sesión</h3>
         <input type="email" id="login-email" placeholder="Correo electrónico" required>
         <input type="password" id="login-password" placeholder="Contraseña" required>
         <button id="login-btn" class="btn btn-success">Ingresar</button>
+
+        <!-- Botón para cambiar a Registro -->
+        <p class="mt-3">¿No tienes cuenta? <a href="#" id="mostrar-registro">Regístrate aquí</a></p>
     </div>
 
-    
+    <!-- Panel de Usuario -->
     <div id="user-panel" style="display: none;">
         <h3>Bienvenido, <span id="user-email"></span></h3>
         <p id="user-role"></p>
+        <button id="logout-btn" class="btn btn-danger">Cerrar Sesión</button>
+    </div>
+
         
-        
-        <div id="estudiante-section" style="display: none;">
-            <h4>Historial de Clases y Pagos:</h4>
+        <!-- Sección para Estudiantes -->
+        <div id="estudiante-section" class="mt-3" style="display: none;">
+            <h4>📚 Historial de Clases y Pagos</h4>
             <ul id="historial">
                 <li>Clase de Matemáticas - Pagada</li>
                 <li>Clase de Física - Pendiente de pago</li>
             </ul>
         </div>
 
-        
-        <div id="tutor-section" style="display: none;">
-            <h4>Gestión de Tutorías</h4>
-            <button id="agregar-clase" class="btn btn-primary">Agregar Clase</button>
-            <ul id="clases-tutor">
-                <li>No tienes clases registradas.</li>
-            </ul>
-        </div>
-
-        <button id="logout-btn" class="btn btn-danger">Cerrar Sesión</button>
+    <!-- Sección para Tutores -->
+    <div id="tutor-section" class="mt-3" style="display: none;">
+        <h4>👨‍🏫 Gestión de Tutorías</h4>
+        <button id="agregar-clase" class="btn btn-primary">Agregar Clase</button>
+        <ul id="clases-tutor"></ul>
     </div>
+
+
+
+
+    <button id="logout-btn" class="btn btn-danger" style="display: none;">Cerrar Sesión</button>
 </div>
+      
 
 <!-- Sección Contacto -->
 <div id="contacto" class="container mt-5 seccion" style="display: none;">
@@ -285,13 +309,12 @@
 
 <!-- Sección Conclusiones -->
 <div id="conclusiones" class="container mt-5 seccion" style="display: none;">
-    <h2>Conclusiones</h2>
-    <p>Considero que contar con una página dedicada exclusivamente a la gestión de tutorías sería una excelente idea para la universidad. 
-        Actualmente, aunque ya existe una plataforma para el registro de tutorías, sería de gran utilidad disponer de un sistema adicional 
-        que facilite el agendamiento de estas sesiones de manera más eficiente y organizada.</p>
-    <p>Una plataforma de este tipo permitiría a los estudiantes visualizar la disponibilidad de los tutores en tiempo real, seleccionar los horarios 
-        que mejor se adapten a sus necesidades y recibir notificaciones de confirmación o recordatorios sobre sus citas. Además, los tutores podrían 
-        gestionar su agenda de forma más sencilla, estableciendo sus horarios de atención y evitando cruces de citas.</p>
+    <h2>🌸Conclusiones Alejandra Barreto🌸</h2> 
+    <p>Considero que contar con una página dedicada exclusivamente a la gestión de tutorías sería una excelente idea para la universidad. Actualmente, aunque ya existe una plataforma para el registro de tutorías, sería de gran utilidad disponer de un sistema adicional que facilite el agendamiento de estas sesiones de manera más eficiente y organizada.</p> 
+    <p>Una plataforma de este tipo permitiría a los estudiantes visualizar la disponibilidad de los tutores en tiempo real, seleccionar los horarios que mejor se adapten a sus necesidades y recibir notificaciones de confirmación o recordatorios sobre sus citas. Además, los tutores podrían gestionar su agenda de forma más sencilla, estableciendo sus horarios de atención y evitando cruces de citas.</p>
+    <h2>🌼 Conclusiones Jasmin Munevar 🌼</h2>
+    <p>Trabajar en esta plataforma de tutorías ha sido una gran oportunidad para comprender la importancia de contar con herramientas digitales que faciliten el aprendizaje. Un sistema bien organizado permite a los estudiantes acceder a tutorías de manera sencilla y eficiente.</p> 
+    <p>Además, integrar funciones como el registro, la gestión de clases y los testimonios de estudiantes ayuda a mejorar la experiencia del usuario y fomenta un ambiente de aprendizaje accesible para todos.</p>
 </div>
 
 <!-- Sección Equipo -->
