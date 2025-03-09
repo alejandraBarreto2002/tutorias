@@ -1,0 +1,55 @@
+/* Estilos para la sección de Servicios/Tutorías */
+
+#servicios {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#servicios h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#servicios .row {
+    text-align: center;
+}
+
+#servicios .col-md-4 {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+#servicios button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+/* Estilos para la sección de Blog/Recursos */
+
+#blog {
+    background-color: #e9ecef;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#blog h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+#blog .row {
+    text-align: center;
+}
+
+#blog .col-md-6 {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
